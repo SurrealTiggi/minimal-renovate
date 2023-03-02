@@ -4,8 +4,8 @@
   "packageRules": [
     {
       "matchManagers": ["flux"],
-      "commitMessageAction": "Test: --{{{ replace 'clusters' 'foo' baseDir }}}--",
-      "commitMessageTopic": "[{{ replace '^clusters/(production|staging)/.+/flux-system$' '$1' baseDir }}] flux release {{depName}}",
+      "commitMessageAction": "Test: --{{{ replace 'clusters' 'foo' packageFileDir }}}--",
+      "commitMessageTopic": "[{{ replace '^clusters/(production|staging)/.+/flux-system$' '$1' packageFileDir }}] flux release {{depName}}",
       "additionalBranchPrefix": "{{baseDir}}-"
     }
   ]
